@@ -28,4 +28,5 @@ console.log(MHCR("AA","Ab"))
         // parent1[1] + parent2[1]
         
 
-       
+//        Version 2.0
+
