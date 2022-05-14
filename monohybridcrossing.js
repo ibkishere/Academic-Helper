@@ -1,10 +1,10 @@
 function MHCR (parent1, parent2) {
     let argsArray = []
         argsArray.push(parent1,parent2)
+        let regex = /^[a-zA-Z]{2}$/
         for (element of argsArray) { 
-          if ( element.length !== 2 || typeof element !== "string") {
-            throw Error("invalid parent string format")
-          }
+          if (!regex.test(element)) {
+              return Error("invalid character format")
         }
               let childrenArray = []
             for (i = 0 ; i < parent1.length ; i++) {
@@ -16,7 +16,7 @@ function MHCR (parent1, parent2) {
   
 }
 
-
+}
 console.log(MHCR("AA","Ab"))
 
 
